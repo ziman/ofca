@@ -3,6 +3,7 @@
 #include "dbase.h"
 #include <cstdio>
 #include <stack>
+#include <cstdlib>
 
 dbase *db;
 

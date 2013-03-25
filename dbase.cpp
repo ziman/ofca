@@ -1,6 +1,7 @@
 #include "dbase.h"
 #include "globals.h"
 #include <iterator>
+#include <cstdlib>
 
 #define BUF_SIZE 1024
 

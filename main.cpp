@@ -6,6 +6,7 @@
 
 #include <cstdio>
 #include <string>
+#include <cstdlib>
 #include "globals.h"
 #include "parse.h"
 #include "execute.h"
