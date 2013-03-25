@@ -6,7 +6,7 @@ _v1.0, (c) ZimaN & Tomaj 2k5_
 Toto je slobodny softver sireny pod licenciou GNU GPL.
 Pre blizsie informacie citaj subor license.txt.
 
-_NOTE: This is historical code, please do not draw any conclusions from it. :)_
+*NOTE: This is historical code, please do not draw any conclusions from it.* :)
 
 Co a vobec - preco?
 -------------------
