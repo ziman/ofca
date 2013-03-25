@@ -1,0 +1,28 @@
+enter
+napis "OFCA Faktorialy Ciskajuci Automat (c) ZimaN 2005\n"
+napis "------------------------------------------------\n"
+napis "Prikladovy program na vypocet faktorialu v jazyku OFCA\n"
+napis "Tento program sluzi na demostracne ucely.\n"
+napis "Rovnako, ako OFCA, je sireny pod licenciou GNU GPL.\n"
+enter
+napis "Vloz cislo: " a popytaj toto cislo
+
+i je 1, n je 1
+kolecko
+	i je vyraz: i krat n
+	Ak vyraz n je (zadane) cislo, ubzikni (hehe), ked ne, zvacsi n! :)
+konec ifa a konec kolecka
+
+napis vyraz "(kolecko) Hladany faktorial je: " plus i, enter
+
+menak vysledok je asik 1
+coska fakt
+	Ak vyraz n mensi 2, vysledok je 1.
+	Ked ne, zmensi n a zrob fakt!
+	Zvacsi n a vysledok je vyraz vysledok krat n.
+konec ifa a konec cehoska
+
+n je cislo: zrob fakt!
+napis vyraz "(rekurzia) Hladany faktorial je: " plus vysledok enter
+	
+konec programa.

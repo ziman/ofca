@@ -1,0 +1,56 @@
+menak a bude furt 10
+b je 5
+napis "a = " napis a napis ", b = " napis b enter
+napis "10^2x(10+5) == "
+napis vyraz a krat b enter
+
+napis "Postupka: "
+
+i je 0
+kolecko
+	i je vyraz i plus 1
+	napis i
+	ak vyraz i vacsie 10
+		ubzikni
+	konec ifa
+	napis ", "
+konec kolecka
+enter
+
+i je 0
+kolecko
+	i je vyraz i plus 1
+	ak vyraz i mensi 5
+		napis "?"
+		nazad
+	konec ifa
+	napis i
+	ak vyraz i nemensi 20
+		ubzykny
+	konec ifa
+	napis ", "
+konec kolecka
+
+enter
+
+napis "Tu zadaj svoje meno: "
+popytaj meno
+napis "Prvy sposob:  "
+napis vyraz vyraz "Ej ci pana, tha toten " plus meno plus " je ale pnak!" enter
+napis "Druhy sposob: "
+napis vyraz "Ej ci pana, tha toten " plus vyraz meno plus " je ale pnak!\n"
+
+enter
+napis "Teraz napis cislo: "
+popytaj cislo
+ak vyraz cislo mensie 10
+	napis "Cislo je mensie ako 10.\n"
+ked ne
+	ak vyraz cislo je 10
+		napis "Cislo sa rovna 10.\n"
+	ked ne
+		napis "Cislo je vacsie ako 10.\n"
+	konec ifa
+konec ifa
+
+konec programa
