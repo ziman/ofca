@@ -1,7 +1,7 @@
 OFCA Free Command Analyzer
 ==========================
 
-v1.0, (c) ZimaN & Tomaj 2k5
+_v1.0, (c) ZimaN & Tomaj 2k5_
 
 Toto je slobodny softver sireny pod licenciou GNU GPL.
 Pre blizsie informacie citaj subor license.txt.
@@ -16,7 +16,7 @@ nasledujuci vecer - 15.4.2005. Vychadza z nemenej popularneho
 vychodoslovenskeho programovacieho jazyka Saral (Saris 
 algorithmic language).
 
-	Podstatou OFCE je extremne human-like syntax. Co to
+Podstatou OFCE je extremne human-like syntax. Co to
 vlastne znamena? Na rozdiel od inych programovacich jazykov,
 v ktorych sa vyskytuju same specialne znaky a operatory, OFCA
 taketo znaky vobec nepozna (okrem uvodzovky). Vsetky elementy
@@ -67,6 +67,7 @@ nekladu absolutne ziadne podmienky (mozu obsahovat akekolvek znaky),
 samozrejme okrem whitespace znakov.
 
 OFCA rozlisuje dva typy slov:
+
 1. Retazce - slova uvedene v uvodzovkach:
   - napr. "Abeceda zjedla deda.\n"
   - znaky uvedene backslashom budu interpretovane C-ckovskym stylom (\n, \r, \t, \\)
@@ -84,11 +85,15 @@ Pri operatoroch je VELMI dolezite spomenut viacero veci:
 Tento pristup umoznuje obohatit sloh v OFCI o prirodzenejsie prvky jazyka.
 
 Napr:
+```
 	Napis "Vloz cislo: ", popytaj toto cislo a napis toto cislo!
+```
 je to iste ako
+```
 	napis "Vloz cislo: "
 	popytaj cislo
 	napis cislo
+```
 
 ### Vyznam operatorov zavisi od ich pozicie v slohu
 
@@ -98,8 +103,10 @@ slovom, povazuje sa za premennu. Operator mozeme explicitne urcit
 ako premennu, ked pred nu napiseme operator "menak".
 
 Priklad:
+```
 	menak ak je 10
 	napis ak
+```
 
 vypise premennu s nazvom ak. Ak by sme neuviedli operator "menak",
 operator "ak" by bol povazovany za zaujimave slovo, ktore znamena
@@ -112,9 +119,11 @@ nam hovori, ze nasledujuce tri operatory tvoria vyraz, ktory pozostava
 z laveho operandu, operatora a praveho operandu. Oba operandy vsak
 mozu byt tiez vyrazmi, a teda sa vyrazy rekurzivne vyhodnocuju.
 
+```
 	vyraz 1 plus 10			= 11
 	vyraz a plus b			= a+b
 	vyraz a krat vyraz a plus b	= a*(a+b)
+```
 
 V poslednom pripade je pravym operandom dalsi vyraz. Tieto
 vyrazy sa daju pouzit v priradeni (a je vyraz a plus b), v podmienke
@@ -123,31 +132,33 @@ hodnota.
 	
 ### Co pozname z inych jazykov a ako sa to povie v OFCI
 
-	C/C++			Pascal			OFCA
-	------------------------------------------------------
-	x = 5			x:=5			x je 5 ALEBO x bude 5
-	const x = 5		const x = 5		x bude furt 5
-	x = y+z			x:=y+z			x je vyraz y plus z
-	printf("bla\n")		writeln("bla)		napis "bla\n"
-	printf("\n")		writeln;		enter
-	x = p*(q+r)		x:=p*(q+r)		x je vyraz p krat vyraz q plus r
-	gets(x)			readln(x)		popytaj x
-	break			break			ubzikni
-	continue		continue		nazad
-	(...)
+C/C++		|	Pascal		|	OFCA
+----------------|-----------------------|-------------
+x = 5		|	x:=5		|	x je 5 ALEBO x bude 5
+const x = 5	|	const x = 5	|	x bude furt 5
+x = y+z		|	x:=y+z		|	x je vyraz y plus z
+printf("bla\n")	|	writeln("bla)	|	napis "bla\n"
+printf("\n")	|	writeln;	|	enter
+x = p*(q+r)	|	x:=p*(q+r)	|	x je vyraz p krat vyraz q plus r
+gets(x)		|	readln(x)	|	popytaj x
+break		|	break		|	ubzikni
+continue	|	continue	|	nazad
+(...)		|			|
 
 Bohuzial, som lenivy ako vos, a tak sa mi nechce pisat viacej. Pozri si prikladove programy, tam to pochopis.
 
 - procedura sa uvadza:
-
+```
 	coska meno_procedury
 		-prikaz-
 		-prikaz-
 	konec cehoska
+```
 
 - volanie procedury
-	
+```
 	zrob meno_procedury
+```
 
 - procedura dostane kopie vsetkych premennych. akekolvek zmeny sa po navrate
   z procedury stratia, okrem premennej "vysledok" (ta sa zachova).
